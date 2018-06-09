@@ -1,3 +1,6 @@
+set -e
+set -v
+
 # Installs python Miniconda3 for OSX and Linux
 
 # OSX does not come with a preinstalled python

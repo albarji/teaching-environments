@@ -35,8 +35,8 @@ install:
           throw "There are newer queued builds for this pull request, failing early." }
   # this installs the appropriate Miniconda (Py2/Py3, 32/64 bit),
   # as well as pip, conda-build, and the binstar CLI
-  #- powershell .\\continuous-integration\\appveyor\\install.ps1
-  #- "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - powershell .\\continuous-integration\\appveyor\\install.ps1
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
   # Update conda
   - set "CONDA_ROOT=C:\Miniconda%BASE_PYTHON_VERSION%%ARCH_LABEL%"
   - set "PATH=%CONDA_ROOT%;%CONDA_ROOT%\Scripts;%CONDA_ROOT%\Library\bin;%PATH%"

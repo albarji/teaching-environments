@@ -1,7 +1,7 @@
 # Tests that the environment works correctly
 
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import sklearn
 import pandas
 import scipy

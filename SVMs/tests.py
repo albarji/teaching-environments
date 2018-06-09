@@ -1,6 +1,7 @@
 # Tests that the environment works correctly
 
 import matplotlib
+matplotlib.use('TkAgg')
 import sklearn
 import pandas
 import scipy
@@ -11,7 +12,6 @@ from sklearn.externals.six.moves import xrange
 
 from sklearn import svm
 
-matplotlib.use('TkAgg')
 import tkinter as Tk
 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg

@@ -5,12 +5,16 @@ import keras
 import matplotlib
 import sklearn
 import pandas
+import scipy
+import numpy
 
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers.core import Activation
 from keras.layers.core import Dense
 from keras.utils import np_utils
+
+from scipy.misc import imread
 
 
 def test_keras():

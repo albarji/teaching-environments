@@ -1,7 +1,7 @@
 # Tests that the environment works correctly
 
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use('TkAgg')
 import sklearn
 import pandas
 import scipy
@@ -28,9 +28,4 @@ def test_svm():
     clf = svm.SVC()
     clf.fit(X, y)  
     clf.predict([[2., 2.]])
-
-
-def test_tkinter():
-    """Tests that a Tk inter object can be created"""
-    root = Tk.Tk()
 

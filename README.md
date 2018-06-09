@@ -8,6 +8,6 @@ Conda environments for Machine Learning lectures.
 
 Index:
 
-* **deeplearning**: environments for Deep Learning labs with Keras + Tensorflow.
+* [Deep Learning environments for Deep Learning labs with Keras + Tensorflow](deeplearning)
 * ... more to come!
 

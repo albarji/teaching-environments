@@ -52,6 +52,8 @@ test_script:
   - set PATH
   # Create environments
   - conda env create -f deeplearning/environment-windows.yml
+  - conda env create -f SVMs/environment-windows.yml
   # Run tests
   - activate deeplearning-labs && conda install nose && nosetests deeplearning
+  - activate svm-labs && conda install nose && nosetests SVMs
 

@@ -44,7 +44,8 @@ before_install:
 install:
   # Create environments
   - conda env create -f deeplearning/environment-linux.yml 
+  - conda env create -f SVMs/environment-linux.yml
 script:
-  # Deep Learning environment test
   - source activate deeplearning-labs && conda install nose && nosetests deeplearning
+  - source activate svm-labs && conda install nose && nosetests SVMs
 

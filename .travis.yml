@@ -24,7 +24,6 @@ install:
   # Create environments
   - conda env create -f deeplearning/environment-linux.yml 
 script:
-  # Tests
-  - source activate deeplearning-labs && python -c "import keras"
-#after_success:
-#  - coveralls
+  # Deep Learning environment test
+  - source activate deeplearning-labs && nosetests deeplearning
+

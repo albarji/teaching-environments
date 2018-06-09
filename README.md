@@ -1,2 +1,6 @@
 # teaching-environments
-Some conda environments I use for my lectures on machine learning
+
+[![Build Status](https://travis-ci.org/albarji/teaching-environments.svg?branch=master)](https://travis-ci.org/albarji/teaching-environments)
+
+Some conda environments for Machine Learning lectures.
+

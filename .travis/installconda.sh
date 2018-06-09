@@ -1,16 +1,6 @@
 set -e
 set -v
 
-# Installs python Miniconda3 for OSX and Linux
-
-# OSX does not come with a preinstalled python
-#if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then 
-#    brew update;
-#    brew install python3;
-#    virtualenv venv -p python3;
-#    source venv/bin/activate;
-#fi
-
 # System config steps
 if [ "$TRAVIS_OS_NAME" = linux ]; then
     sudo apt-get update

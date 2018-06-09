@@ -35,7 +35,7 @@ matrix:
 
 before_install:
   # Install miniconda3
-  - .travis/installconda.sh
+  - bash .travis/installconda.sh
 install:
   # Create environments
   - conda env create -f deeplearning/environment-linux.yml 

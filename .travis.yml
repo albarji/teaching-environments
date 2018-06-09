@@ -2,18 +2,22 @@ language: python
 matrix:
     include:
         - os: linux
+          sudo: required
           python: "3.3"
           dist: trusty
 
         - os: linux
+          sudo: required
           python: "3.4"
           dist: trusty
 
         - os: linux
+          sudo: required
           python: "3.5"
           dist: trusty
 
         - os: linux
+          sudo: required
           python: "3.6"
           dist: trusty
 
@@ -35,7 +39,7 @@ matrix:
 
 before_install:
   # Install miniconda3
-  - bash .travis/installconda.sh
+  - .travis/installconda.sh
 install:
   # Create environments
   - conda env create -f deeplearning/environment-linux.yml 

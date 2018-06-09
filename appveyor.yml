@@ -38,7 +38,7 @@ install:
   #- powershell .\\continuous-integration\\appveyor\\install.ps1
   #- "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
   # Update conda
-  - set "CONDA_ROOT=C:\Miniconda%BASE_PYTHON_VERSION%%ARCH_LABEL%"
+  - set "CONDA_ROOT=C:\Miniconda3-x64"
   - set "PATH=%CONDA_ROOT%;%CONDA_ROOT%\Scripts;%CONDA_ROOT%\Library\bin;%PATH%"
   - conda config --set always_yes yes
   - conda update -q conda

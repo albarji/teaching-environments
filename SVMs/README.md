@@ -10,7 +10,7 @@ Download the [environment file](environment-linux.yml) to your computer and open
 
 to create an environment named `svm-labs` with the necessary packages. Then log into the environment running
 
-    source activate deeplearning-labs
+    source activate svm-labs
 
 The environment includes jupyter notebooks, so you just need to type
 

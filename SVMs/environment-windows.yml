@@ -5,4 +5,4 @@ dependencies:
   - scikit-learn=0.19.1
   - pillow=5.1.0
   - pandas=0.23.0
-  - prox_tv=3.2.1
+  - prox-tv=3.2.1

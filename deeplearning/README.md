@@ -1,6 +1,6 @@
 # Deep Learning Labs Environments
 
-First make sure you have a working **Python 3** [Conda distribution](https://anaconda.org/anaconda/python), then follow the next steps for you operative system. If your laptop features an nVidia GPU you can attemt a GPU install for better performance.
+First make sure you have a working **Python 3** [Conda distribution](https://anaconda.org/anaconda/python), then follow the next steps for you operative system. If your laptop features an nVidia GPU you can attempt a GPU install for better performance.
 
 ## Linux or Mac
 

@@ -6,15 +6,17 @@ First make sure you have a working **Python 3** [Conda distribution](https://ana
 
 ### CPU environment
 
-Download the [environment file](environment-linux.yml) to your computer and open a terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux.yml) to your computer and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux.yml
 
-to create an environment named `deeplearning-labs` with the necessary packages. Then log into the environment running
+to create an environment named `deeplearning-labs` with the necessary packages.
+
+After creating the environment, open a terminal in the folder with the notebooks you want to work with. Then log into the environment running
 
     source activate deeplearning-labs
 
-The environment includes jupyter notebooks, so you just need to type
+and then type
 
     jupyter notebook
 
@@ -22,7 +24,7 @@ to start the notebook server.
 
 ### GPU environment
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](environment-linux-gpu.yml) to your computer and open a terminal in the same folder. Then type
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux-gpu.yml
 
@@ -32,15 +34,25 @@ and follow the same steps as for the CPU version. If you find issues when import
 
 ### CPU environment
 
-Download the [environment file](environment-windows.yml) to your computer and open an **Anaconda Prompt** terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows.yml) to your computer and open an **Anaconda Prompt** terminal in the same folder. Then type
 
     conda env create -f environment-windows.yml
 
-to create an environment named `deeplearning-labs` with the necessary packages. Then open **Anaconda Navigator**, look for this environment and launch a Jupyter notebook.
+to create an environment named `deeplearning-labs` with the necessary packages. 
+
+After creating the environment, open **Anaconda Navigator**, look for this environment and launch a Jupyter notebook. If for whatever reason this fails, you can also try opening a terminal in the folder with the notebooks you want to work with, then log into the environment running
+
+    activate deeplearning-labs
+
+and then type
+
+    jupyter notebook
+
+to start the notebook server.
 
 ### GPU environment
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](environment-windows-gpu.yml) and open an **Anaconda Prompt** terminal in the same folder. Then type
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows-gpu.yml) and open an **Anaconda Prompt** terminal in the same folder. Then type
 
     conda env create -f environment-windows-gpu.yml
 

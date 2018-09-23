@@ -14,7 +14,10 @@ from keras.layers.core import Activation
 from keras.layers.core import Dense
 from keras.utils import np_utils
 
-from scipy.misc import imread
+from skimage.io import imread
+from skimage.transform import resize
+
+from sklearn.model_selection import train_test_split
 
 
 def test_keras():

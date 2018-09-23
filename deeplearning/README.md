@@ -28,7 +28,7 @@ Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.
 
     conda env create -f environment-linux-gpu.yml
 
-and follow the same steps as for the CPU version. If you find issues when importing tensorflow or keras, install the latest [nVidia Toolkit](https://developer.nvidia.com/cuda-toolkit) and repeat the steps.
+and follow the same steps as for the CPU version. If you find issues when importing tensorflow or keras, you will need the find out what CUDA version is appropriate for your nVidia GPU and driver version, and modify the contents of the environment file to make use of an appropriate **cudatoolkit** version.
 
 ## Windows
 
@@ -56,7 +56,7 @@ Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.
 
     conda env create -f environment-windows-gpu.yml
 
-and follow the same steps as for the CPU version. If you find issues when importing tensorflow or keras, install the latest [nVidia Toolkit](https://developer.nvidia.com/cuda-toolkit) and repeat the steps.
+and follow the same steps as for the CPU version. If you find issues when importing tensorflow or keras, you will need the find out what CUDA version is appropriate for your nVidia GPU and driver version, and modify the contents of the environment file to make use of an appropriate **cudatoolkit** version.
 
 ## Manual install
 

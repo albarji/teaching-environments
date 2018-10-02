@@ -1,6 +1,6 @@
 name: deeplearning-labs
 dependencies:
-  - keras=2.1.5
+  - keras=2.2.2
   - jupyter=1.0.0
   - nb_conda=2.2.1
   - matplotlib=2.2.2

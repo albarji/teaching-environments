@@ -1,7 +1,7 @@
 name: deeplearning-labs-gpu
 dependencies:
   - cudatoolkit==9.0
-  - cudnn==7.1.4
+  - cudnn==7.1.2
   - keras-gpu=2.2.2
   - jupyter=1.0.0
   - nb_conda=2.2.1

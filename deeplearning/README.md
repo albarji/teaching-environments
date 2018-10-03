@@ -22,7 +22,7 @@ and then type
 
 to start the notebook server.
 
-### GPU environment
+### GPU environment (only Linux, no Mac support for now)
 
 Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer and open a terminal in the same folder. Then type
 

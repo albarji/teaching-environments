@@ -1,4 +1,6 @@
 name: deeplearning-labs-gpu
+channels:
+  - conda-forge
 dependencies:
   - cudatoolkit==9.0
   - cudnn==7.1.2
@@ -9,5 +11,4 @@ dependencies:
   - scikit-learn=0.19.1
   - pandas=0.23.0
   - scikit-image=0.14
-  - pip:
-    - scikit-optimize==0.5.2
+  - scikit-optimize==0.5.2

@@ -8,7 +8,7 @@ Conda environments for Machine Learning lectures.
 
 ## Usage
 
-Install a **Python 3** [Conda distribution](https://anaconda.org/anaconda/python), then follow the instructions for each particular environment:
+First install a **Python 3** [Conda distribution](https://anaconda.org/anaconda/python). If you are using Windows make sure you install Anaconda only for your current user, and under a folder that does not contain non-UTF characters (such as **ñ** or **á**). After intalling follow the instructions for each particular environment:
 
 * [Deep Learning environments with Keras + Tensorflow](deeplearning)
 * [Support Vector Machine environments with scikit-learn](SVMs)

@@ -6,7 +6,7 @@ First make sure you have a working **Python 3** [Conda distribution](https://ana
 
 ### CPU environment
 
-Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux.yml) to your computer and open a terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux.yml
 
@@ -24,7 +24,7 @@ to start the notebook server.
 
 ### GPU environment (only Linux, no Mac support for now)
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer and open a terminal in the same folder. Then type
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux-gpu.yml
 
@@ -34,13 +34,11 @@ and follow the same steps as for the CPU version. If you find issues when import
 
 ### CPU environment
 
-Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows.yml) to your computer and open an **Anaconda Prompt** terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows.yml) to your computer (right click -> Save link as...) and open an **Anaconda Navigator**. Click on the **Environments** tab, and look for the **Import** button. After clicking it, select as **Specification file** the environment file you downloaded. This will create an environment named `deeplearning-labs` with the necessary packages. Note the creation process might take a while.
 
-    conda env create -f environment-windows.yml
+After creating the environment, click the play icon at the environment name, and choose the option to launch a Jupyter notebook.
 
-to create an environment named `deeplearning-labs` with the necessary packages. 
-
-After creating the environment, open **Anaconda Navigator**, look for this environment and launch a Jupyter notebook. If for whatever reason this fails, you can also try opening a terminal in the folder with the notebooks you want to work with, then log into the environment running
+If for whatever reason the Jupyter notebook launch fails, you can also try opening an Anaconda Prompt in the folder with the notebooks you want to work with, then log into the environment running
 
     activate deeplearning-labs
 
@@ -52,11 +50,9 @@ to start the notebook server.
 
 ### GPU environment
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows-gpu.yml) and open an **Anaconda Prompt** terminal in the same folder. Then type
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows-gpu.yml) (right click -> Save file as...) and follow the same steps as for the CPU version.
 
-    conda env create -f environment-windows-gpu.yml
-
-and follow the same steps as for the CPU version. If you find issues when importing tensorflow or keras, you will need the find out what CUDA version is appropriate for your nVidia GPU and driver version, and modify the contents of the environment file to make use of an appropriate **cudatoolkit** version.
+If you find issues when importing tensorflow or keras, you will need the find out what CUDA version is appropriate for your nVidia GPU and driver version, and modify the contents of the environment file to make use of an appropriate **cudatoolkit** version.
 
 ## Manual install
 

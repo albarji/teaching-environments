@@ -4,7 +4,7 @@ First make sure you have a working **Python 3** [Conda distribution](https://ana
 
 ## Linux or Mac
 
-Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/SVMs/environment-linux.yml) to your computer and open a terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/SVMs/environment-linux.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux.yml
 
@@ -22,13 +22,11 @@ to start the notebook server.
 
 ## Windows
 
-Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/SVMs/environment-windows.yml) to your computer and open an **Anaconda Prompt** terminal in the same folder. Then type
+Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/SVMs/environment-windows.yml) to your computer (right click -> Save link as...) and open an **Anaconda Navigator**. Click on the **Environments** tab, and look for the **Import** button. After clicking it, select as **Specification file** the environment file you downloaded. This will create an environment named `svm-labs` with the necessary packages. Note the creation process might take a while.
 
-    conda env create -f environment-windows.yml
+After creating the environment, click the play icon at the environment name, and choose the option to launch a Jupyter notebook.
 
-to create an environment named `svm-labs` with the necessary packages. 
-
-After creating the environment, open **Anaconda Navigator**, look for this environment and launch a Jupyter notebook. If for whatever reason this fails, you can also try opening a terminal in the folder with the notebooks you want to work with, then log into the environment running
+If for whatever reason the Jupyter notebook launch fails, you can also try opening an Anaconda Prompt in the folder with the notebooks you want to work with, then log into the environment running
 
     activate svm-labs
 

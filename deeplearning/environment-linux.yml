@@ -1,6 +1,4 @@
 name: deeplearning-labs
-channels:
-  - conda-forge
 dependencies:
   - keras=2.2.2
   - jupyter=1.0.0
@@ -9,4 +7,5 @@ dependencies:
   - scikit-learn=0.19.1
   - pandas=0.23.0
   - scikit-image=0.14
-  - scikit-optimize==0.5.2
+  - pip:
+    - scikit-optimize==0.5.2

@@ -20,6 +20,10 @@ and then type
 
 to start the notebook server.
 
+Note: if for any reason Jupyter is unable to find the environment (kernel) you just installed, you can configure it manually by running the following command in the terminal (after activating the environment):
+
+    python -m ipykernel install --user --name svm-labs --display-name "Python (svm-labs)"
+
 ## Windows
 
 Download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/SVMs/environment-windows.yml) to your computer (right click -> Save link as...) and open an **Anaconda Navigator**. Click on the **Environments** tab, and look for the **Import** button. After clicking it, select as **Specification file** the environment file you downloaded. This will create an environment named `svm-labs` with the necessary packages. Note the creation process might take a while.

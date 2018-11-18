@@ -22,6 +22,10 @@ and then type
 
 to start the notebook server.
 
+Note: if for any reason Jupyter is unable to find the environment (kernel) you just installed, you can configure it manually by running the following command in the terminal (after activating the environment):
+
+    python -m ipykernel install --user --name deeplearning-labs --display-name "Python (deep-learning-labs)"
+
 ### GPU environment (only Linux, no Mac support for now)
 
 Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type

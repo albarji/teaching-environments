@@ -50,4 +50,4 @@ install:
 script:
   - source activate deeplearning-labs && conda install nose && nosetests deeplearning
   - source activate svm-labs && conda install nose && nosetests SVMs
-  - source activate textminig-labs && conda install nose && nosetests textmining
+  - source activate textmining-labs && conda install nose && nosetests textmining

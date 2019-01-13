@@ -3,15 +3,18 @@
 import matplotlib
 matplotlib.use('TkAgg')
 import sklearn
-import pandas
+import pandas as pd
 import scipy
-import numpy
+import numpy as np
 import ete3
 import graphviz
+import skopt
 
 from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
 from graphviz import Source
+from xgboost import XGBClassifier
+from skopt import BayesSearchCV
 
 
 # Auxiliary functions
@@ -37,6 +40,12 @@ def plottree(decisiontree, features_names=None, class_names=None):
     return Source(dot_data)
 
 
+def getdata():
+    X = np.array([[0, 0], [1, 1]])
+    y = [0, 1]
+    return X, y
+
+
 def buildtree(X, y):
     clf = DecisionTreeClassifier()
     clf.fit(X, y)
@@ -47,15 +56,21 @@ def buildtree(X, y):
 
 def test_tree():
     """Trains a Tree"""
-    X = [[0, 0], [1, 1]]
-    y = [0, 1]
+    X, y = getdata()
     clf = buildtree(X, y)
     clf.predict([[2., 2.]])
 
 
 def plot_tree():
     """Plots a Tree"""
-    X = [[0, 0], [1, 1]]
-    y = [0, 1]
+    X, y = getdata()
     clf = buildtree(X, y)
     plottree(clf)
+
+
+def test_xgb():
+    """Trains an XGB model"""
+    X, y = getdata()
+    clf = XGBClassifier()
+    clf.fit(X, y)
+    clf.predict([[2., 2.]])

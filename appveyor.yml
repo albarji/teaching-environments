@@ -55,8 +55,10 @@ test_script:
   - conda env create -f deeplearning/environment-windows-gpu.yml
   - conda env create -f SVMs/environment-windows.yml
   - conda env create -f textmining/environment.yml
+  - conda env create -f ensembles/environment.yml
   # Run tests
-  - activate deeplearning-labs && conda install nose && nosetests deeplearning
-  - activate svm-labs && conda install nose && nosetests SVMs
-  - activate textminining-labs && conda install nose && nosetests textmining
+  - activate deeplearning-labs && pip install nose && nosetests deeplearning
+  - activate svm-labs && pip install nose && nosetests SVMs
+  - activate textminining-labs && pip install nose && nosetests textmining
+  - activate ensembles-labs && pip install nose && nosetests ensembles
 

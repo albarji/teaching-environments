@@ -1,0 +1,10 @@
+name: ensembles-labs
+dependencies:
+  - jupyter=1.0.0
+  - matplotlib=2.0.2
+  - scikit-learn=0.19.1
+  - pandas=0.23.0
+  - graphviz=2.38
+  - python-graphviz=0.8.4
+  - pip:
+    - ete3==3.1.1

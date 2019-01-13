@@ -46,6 +46,8 @@ install:
   - conda env create -f deeplearning/environment-linux.yml
   - if [ "$TRAVIS_OS_NAME" = linux ]; then conda env create -f deeplearning/environment-linux-gpu.yml; fi
   - conda env create -f SVMs/environment-linux.yml
+  - conda env create -f textmining/environment.yml
 script:
   - source activate deeplearning-labs && conda install nose && nosetests deeplearning
   - source activate svm-labs && conda install nose && nosetests SVMs
+  - source activate textmining-labs && conda install nose && nosetests textmining

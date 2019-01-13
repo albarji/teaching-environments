@@ -1,0 +1,6 @@
+name: textmining-labs
+dependencies:
+  - jupyter=1.0.0
+  - matplotlib=2.2.2
+  - scikit-learn=0.19.1
+  - pandas=0.23.0

@@ -13,3 +13,4 @@ First install a **Python 3** [Conda distribution](https://anaconda.org/anaconda/
 * [Deep Learning environments with Keras + Tensorflow](deeplearning)
 * [Support Vector Machine environments with scikit-learn](SVMs)
 * [Text Mining environments](textmining)
+* [Decision Trees and Ensembles environments](ensembles)

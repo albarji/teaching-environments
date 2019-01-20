@@ -41,6 +41,8 @@ before_install:
   # Install miniconda3
   - .travis/installconda.sh
   - export PATH="$HOME/miniconda3/bin:$PATH"
+  # Patch boto config (https://github.com/travis-ci/travis-ci/issues/7940)
+  - export BOTO_CONFIG=/dev/null
 install:
   # Create environments
   - conda env create -f deeplearning/environment-linux.yml

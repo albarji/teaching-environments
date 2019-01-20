@@ -6,12 +6,14 @@ import sklearn
 import pandas
 import scipy
 import numpy
+import seaborn
+import spacy
+import gensim
+import subprocess
 
 from sklearn import svm
 
-from matplotlib.figure import Figure
-from matplotlib.contour import ContourSet
-from matplotlib.lines import Line2D
+from sklearn.decomposition import LatentDirichletAllocation
 
 
 def test_svm():
@@ -22,3 +24,10 @@ def test_svm():
     clf.fit(X, y)  
     clf.predict([[2., 2.]])
 
+
+def test_spacy_nlp():
+    """Runs an NLP pipeline in spaCy"""
+    subprocess.run(["python", "-m" ,"spacy", "download", "en"])
+    nlp = spacy.load('en')
+    sentence = "The black cat sat peacefully on the mat."
+    nlp(sentence)

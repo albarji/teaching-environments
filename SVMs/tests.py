@@ -7,7 +7,7 @@ import pandas
 import scipy
 import numpy
 
-from scipy.misc import imread
+from skimage.io import imread
 from sklearn.externals.six.moves import xrange
 
 from sklearn import svm

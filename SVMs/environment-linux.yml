@@ -4,4 +4,5 @@ dependencies:
   - matplotlib=2.2.2
   - scikit-learn=0.19.1
   - pandas=0.23.0
+  - scikit-image=0.14
 

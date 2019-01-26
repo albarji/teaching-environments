@@ -59,6 +59,6 @@ test_script:
   # Run tests
   - activate deeplearning-labs && pip install nose && nosetests deeplearning
   - activate svm-labs && pip install nose && nosetests SVMs
-  - activate textminining-labs && pip install nose && nosetests textmining
+  - activate textmining-labs && pip install nose && nosetests textmining
   - activate ensembles-labs && pip install nose && nosetests ensembles
 

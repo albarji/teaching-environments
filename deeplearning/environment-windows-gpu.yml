@@ -10,3 +10,4 @@ dependencies:
   - scikit-image=0.14
   - pip:
     - scikit-optimize==0.5.2
+    - pillow==5.3

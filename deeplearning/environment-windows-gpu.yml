@@ -4,10 +4,10 @@ dependencies:
   - cudnn==7.1.4
   - keras-gpu=2.2.2
   - jupyter=1.0.0
-  - matplotlib=2.0.2
+  - matplotlib=2.2.2
   - scikit-learn=0.19.1
   - pandas=0.23.0
-  - scikit-image=0.13
-  - pillow=4.0.0
+  - scikit-image=0.14
   - pip:
     - scikit-optimize==0.5.2
+    - pillow==5.3

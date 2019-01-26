@@ -5,3 +5,5 @@ dependencies:
   - scikit-learn=0.19.1
   - pandas=0.23.0
   - scikit-image=0.14
+  - pip:
+    - pillow==5.3

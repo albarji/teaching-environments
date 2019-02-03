@@ -28,7 +28,7 @@ Note: if for any reason Jupyter is unable to find the environment (kernel) you j
 
 ### GPU environment (only Linux, no Mac support for now)
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](http://www.nvidia.com//Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
 
     conda env create -f environment-linux-gpu.yml
 
@@ -54,7 +54,7 @@ to start the notebook server.
 
 ### GPU environment
 
-Make sure you laptop has an nVidia GPU and the [appropriate drivers](www.nvidia.com/Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows-gpu.yml) (right click -> Save file as...) and follow the same steps as for the CPU version.
+Make sure you laptop has an nVidia GPU and the [appropriate drivers](http://www.nvidia.com//Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-windows-gpu.yml) (right click -> Save file as...) and follow the same steps as for the CPU version.
 
 If you find issues when importing tensorflow or keras, you will need the find out what CUDA version is appropriate for your nVidia GPU and driver version, and modify the contents of the environment file to make use of an appropriate **cudatoolkit** version.
 

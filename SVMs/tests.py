@@ -20,6 +20,9 @@ from matplotlib.figure import Figure
 from matplotlib.contour import ContourSet
 from matplotlib.lines import Line2D
 
+import holoviews as hv
+import colorcet
+
 
 def test_svm():
     """Trains a SVM"""

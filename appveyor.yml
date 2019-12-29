@@ -51,14 +51,14 @@ test_script:
   - set "PATH=%CONDA_ROOT%;%CONDA_ROOT%\Scripts;%CONDA_ROOT%\Library\bin;%PATH%"
   - set PATH
   # Create environments
-  - conda env create -v -f deeplearning/environment-windows.yml
-  - conda env create -v -f deeplearning/environment-windows-gpu.yml
+  #- conda env create -v -f deeplearning/environment-windows.yml
+  #- conda env create -v -f deeplearning/environment-windows-gpu.yml
   - conda env create -v -f SVMs/environment-windows.yml
-  - conda env create -v -f textmining/environment.yml
-  - conda env create -v -f ensembles/environment.yml
+  #- conda env create -v -f textmining/environment.yml
+  #- conda env create -v -f ensembles/environment.yml
   # Run tests
-  - activate deeplearning-labs && pip install nose && nosetests deeplearning
-  - activate svm-labs && pip install nose && nosetests SVMs
-  - activate textmining-labs && pip install nose && nosetests textmining
-  - activate ensembles-labs && pip install nose && nosetests ensembles
+  #- activate deeplearning-labs && pip install nose && nosetests deeplearning
+  - activate svm-labs && pip install nose && conda list && nosetests SVMs
+  #- activate textmining-labs && pip install nose && nosetests textmining
+  #- activate ensembles-labs && pip install nose && nosetests ensembles
 

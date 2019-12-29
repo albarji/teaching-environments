@@ -5,8 +5,11 @@ import keras
 import matplotlib
 import sklearn
 import pandas
+import requests
 import scipy
 import numpy
+
+from eli5 import explain_prediction, format_as_image
 
 from keras.datasets import mnist
 from keras.models import Sequential
@@ -33,3 +36,9 @@ def test_keras():
     model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
     model.fit(trainvectors, Y_train, epochs=1)
 
+
+
+def test_requests():
+    """Tries to perform a request to a public server"""
+    r = requests.get('http://www.google.com/search?q=deep+learning')
+    print(r.text)

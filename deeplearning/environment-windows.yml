@@ -5,7 +5,10 @@ dependencies:
   - matplotlib=2.2.2
   - scikit-learn=0.19.1
   - pandas=0.23.0
+  - pip=19.3.1
+  - requests=2.22.0
   - scikit-image=0.14
   - pip:
-    - scikit-optimize==0.5.2
+    - eli5==0.10.1
     - pillow==5.3
+    - scikit-optimize==0.5.2

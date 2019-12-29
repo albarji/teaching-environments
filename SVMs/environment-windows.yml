@@ -1,11 +1,12 @@
 name: svm-labs
 dependencies:
+  - colorcet=2.0.1
+  - holoviews=1.12.3
   - jupyter=1.0.0
   - matplotlib=2.2.2
   - scikit-learn=0.19.1
   - pandas=0.23.0
+  - pip=19.3.1
   - scikit-image=0.14
-  - holoviews=1.12.3
-  - colorcet=2.0.1
   - pip:
     - pillow==5.3

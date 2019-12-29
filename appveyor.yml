@@ -57,8 +57,8 @@ test_script:
   - conda env create -v -f textmining/environment.yml
   - conda env create -v -f ensembles/environment.yml
   # Run tests
-  - activate deeplearning-labs && pip install nose && nosetests deeplearning
-  - activate svm-labs && pip install nose && nosetests SVMs
-  - activate textmining-labs && pip install nose && nosetests textmining
-  - activate ensembles-labs && pip install nose && nosetests ensembles
+  - activate deeplearning-labs && pip install nose && nosetests deeplearning && deactivate
+  - activate svm-labs && pip install nose && conda list && nosetests SVMs && deactivate
+  - activate textmining-labs && pip install nose && conda list && nosetests textmining && deactivate
+  - activate ensembles-labs && pip install nose && conda list && nosetests ensembles && deactivate
 

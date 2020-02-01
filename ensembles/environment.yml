@@ -7,7 +7,8 @@ dependencies:
   - jupyter=1.0.0
   - matplotlib=2.0.2
   - pandas=0.25.3
-  - py-xgboost=0.80
+  - py-xgboost=0.90
   - scikit-learn=0.22
   - scikit-optimize=0.5.2
   - seaborn=0.9.0
+  - shap=0.34.0

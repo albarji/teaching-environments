@@ -12,3 +12,4 @@ dependencies:
   - scikit-optimize=0.5.2
   - seaborn=0.9.0
   - shap=0.34.0
+  - tornado=6.0.2

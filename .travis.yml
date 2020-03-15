@@ -51,7 +51,7 @@ install:
   - conda env create -v -f textmining/environment.yml
   - conda env create -v -f ensembles/environment.yml
 script:
-  - source activate deeplearning-labs && pip install nose && nosetests deeplearning
+  - if [ "$TRAVIS_OS_NAME" = linux ]; then source activate deeplearning-labs && pip install nose && nosetests deeplearning; fi
   - source activate svm-labs && pip install nose && nosetests SVMs
   - source activate textmining-labs && pip install nose && nosetests textmining
   - source activate ensembles-labs && pip install nose && nosetests ensembles

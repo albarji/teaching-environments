@@ -1,8 +1,10 @@
 # Deep Learning Labs Environments
 
-First make sure you have a working **Python 3** [Conda distribution](https://anaconda.org/anaconda/python), then follow the next steps for you operative system. If your laptop features an nVidia GPU you can attempt a GPU install for better performance.
+First make sure you have a working **Python 3** [Conda distribution](https://anaconda.org/anaconda/python), then follow the next steps for you operative system. It is **highly recommended** that you use a machine with an nVidia GPU.
 
-## Linux or Mac
+Note that **Mac is not supported** by these environments.
+
+## Linux
 
 ### CPU environment
 
@@ -26,7 +28,7 @@ Note: if for any reason Jupyter is unable to find the environment (kernel) you j
 
     python -m ipykernel install --user --name deeplearning-labs --display-name "Python (deep-learning-labs)"
 
-### GPU environment (only Linux, no Mac support for now)
+### GPU environment
 
 Make sure you laptop has an nVidia GPU and the [appropriate drivers](http://www.nvidia.com//Download/index.aspx) for your operative system and GPU card. After that, download the [environment file](https://raw.githubusercontent.com/albarji/teaching-environments/master/deeplearning/environment-linux-gpu.yml) to your computer (right click -> Save link as...) and open a terminal in the same folder. Then type
 

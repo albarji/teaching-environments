@@ -45,7 +45,7 @@ before_install:
   - export BOTO_CONFIG=/dev/null
 install:
   # Create environments
-  - conda env create -v -f deeplearning/environment-linux.yml
+  - if [ "$TRAVIS_OS_NAME" = linux ]; then conda env create -v -f deeplearning/environment-linux.yml; fi
   - if [ "$TRAVIS_OS_NAME" = linux ]; then conda env create -v -f deeplearning/environment-linux-gpu.yml; fi
   - conda env create -v -f SVMs/environment-linux.yml
   - conda env create -v -f textmining/environment.yml

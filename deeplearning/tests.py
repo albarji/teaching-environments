@@ -22,6 +22,8 @@ from skimage.transform import resize
 
 from sklearn.model_selection import train_test_split
 
+import torch
+
 
 def test_keras():
     """Trains a small network on MNIST with Keras"""

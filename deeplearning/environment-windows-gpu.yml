@@ -14,7 +14,7 @@ dependencies:
   - pytorch=1.4.*
   - requests=2.22.0
   - scikit-image=0.14
-  - tensorflow-gpu=2.*
+  - tensorflow-gpu=1.*
   - torchvision=0.5.*
   - pip:
     - eli5==0.10.1

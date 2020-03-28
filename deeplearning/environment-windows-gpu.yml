@@ -2,6 +2,7 @@ name: deeplearning-labs-gpu
 channels:
   - defaults
   - pytorch
+  - conda-forge
 dependencies:
   - cudatoolkit>=8
   - cudnn>=7

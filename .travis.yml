@@ -45,13 +45,10 @@ before_install:
   - export BOTO_CONFIG=/dev/null
 install:
   # Create environments
-  - if [ "$TRAVIS_OS_NAME" = linux ]; then conda env create -v -f deeplearning/environment-linux.yml; fi
-  - if [ "$TRAVIS_OS_NAME" = linux ]; then conda env create -v -f deeplearning/environment-linux-gpu.yml; fi
   - conda env create -v -f SVMs/environment-linux.yml
   - conda env create -v -f textmining/environment.yml
   - conda env create -v -f ensembles/environment.yml
 script:
-  - if [ "$TRAVIS_OS_NAME" = linux ]; then source activate deeplearning-labs && pip install nose && nosetests deeplearning; fi
   - source activate svm-labs && pip install nose && nosetests SVMs
   - source activate textmining-labs && pip install nose && nosetests textmining
   - source activate ensembles-labs && pip install nose && nosetests ensembles

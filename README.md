@@ -13,4 +13,4 @@ First install a **Python 3, 64-bits** [Conda distribution](https://anaconda.org/
 * [Deep Learning environments with Keras + Tensorflow + Pytorch](https://github.com/albarji/teaching-environments-deeplearning)
 * [Support Vector Machine environments with scikit-learn](SVMs)
 * [Text Mining environments with scikit-learn, gensim and spaCy](textmining)
-* [Decision Trees and Ensembles environments](ensembles)
+* [Decision Trees and Ensembles environments](https://github.com/albarji/teaching-environments-ensembles)

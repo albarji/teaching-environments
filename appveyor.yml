@@ -53,9 +53,7 @@ test_script:
   # Create environments
   - conda env create -v -f SVMs/environment-windows.yml
   - conda env create -v -f textmining/environment.yml
-  - conda env create -v -f ensembles/environment.yml
   # Run tests
   - activate svm-labs && pip install nose && conda list && nosetests SVMs && deactivate
   - activate textmining-labs && pip install nose && conda list && nosetests textmining && deactivate
-  - activate ensembles-labs && pip install nose && conda list && nosetests ensembles && deactivate
 

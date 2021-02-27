@@ -47,8 +47,6 @@ install:
   # Create environments
   - conda env create -v -f SVMs/environment-linux.yml
   - conda env create -v -f textmining/environment.yml
-  - conda env create -v -f ensembles/environment.yml
 script:
   - source activate svm-labs && pip install nose && nosetests SVMs
   - source activate textmining-labs && pip install nose && nosetests textmining
-  - source activate ensembles-labs && pip install nose && nosetests ensembles
